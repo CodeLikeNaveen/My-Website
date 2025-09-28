@@ -12,7 +12,7 @@ function Header() {
 
     const navItems = [
     {
-      name: 'Main',
+      name: 'About',
       slug: "/",
     },
     {
@@ -26,23 +26,22 @@ function Header() {
   ]
   return (
     <header className='top-0 z-50'>
-      <nav className='w-screen px-4 bg-white shadow-[3px_3px_5px_rgba(0,0,0,0.1)]'>
+      <nav className='w-[100dvw] px-4 bg-white shadow-[3px_3px_5px_rgba(0,0,0,0.1)]'>
         <label>          
           {/* Slide Portion */}
-          <div className={`absolute h-[100vh] w-[15vw] ${isChecked ? '' : ' hidden'} `} >
+          <div className={`absolute top-0 right-0 z-50 h-[100dvh] w-60 max-sm:w-[100%] ${isChecked ? '' : ' hidden'} `} >
             <ul className='
-              fixed top-0 right-0 
-              h-[100vh] w-[250px] max-[530px]:w-screen
+              h-[100%] w-[100%]
               z-10 bg-[rgba(255,255,255,0.1)] backdrop-blur-md
               shadow-[-10px_0_10px_rgba(0,0,0,0.1)]
               flex flex-col 
               items-start justify-start'>
                 <li className='py-[1.5rem] px-[1rem] border-t-2 border-white block'></li>
-              {navItems.map((item) => (
-                <li key={item.name}
-                    className='w-[100%] text-blue-500 font-semibold py-[0.5rem] px-[1rem] border-t-2 border-white block capitalize transform ease-out duration-200 hover:text-gray-700'
-                  ><button onClick={() => navigate(item.slug)} className='w-[100%] text-left'> {item.name} </button>
-                </li>))}
+                  {navItems.map((item) =>(
+                    <li key={item.name}
+                        className='w-[100%] text-blue-500 font-semibold py-[0.5rem] px-[1rem] border-t-2 border-white block capitalize transform ease-out duration-200 hover:text-gray-700'
+                      ><button onClick={() => navigate(item.slug)} className='w-[100%] text-left'> {item.name} </button>
+                    </li>))}
               <li className='w-[100%]'>
                 <a href="/Naveen_Resume.pdf"
                   download 
@@ -62,7 +61,7 @@ function Header() {
           </div>
         </label>
         <ul className='w-[100%] flex justify-end items-center'>
-          <li className='text-blue-600 font-bold text-[2rem] mr-auto'>
+          <li className='bg-gradient-to-l hover:bg-gradient-to-r from-blue-500 to-blue-900 font-bold text-[2rem] mr-auto bg-clip-text text-transparent'>
             <Link to='/'>{`</>`}CodeLikee</Link>
           </li>
             {navItems.map((item) => (
@@ -71,7 +70,7 @@ function Header() {
                     <button
                     onClick={() => navigate(item.slug)}
                     className='
-                      max-[800px]:hidden
+                      max-md:hidden
                       h-[100%]
                       px-8
                       flex
@@ -87,7 +86,7 @@ function Header() {
                       flex px-3 py-1 bg-white text-blue-600
                       space-x-2 
                       rounded-lg 
-                      max-[800px]:hidden
+                      max-md:hidden
                       border-2
                       hover:shadow-black
                       hover:border-gray-500
