@@ -43,7 +43,11 @@ function Footer() {
                     `}></i></a>  
                 ))}
             </div>
+<<<<<<< HEAD
             <div className="h-[100%] text-white text-[clamp(1rem,calc(1vw+1rem),1.8rem)] md:ml-auto md:mr-8">
+=======
+            <div className="h-[100%] text-white text-[1.5rem] md:ml-auto md:mr-8">
+>>>>>>> f196cdfe28763fdf42a05350dfd5bed5d3f28deb
                 &copy; Copyright 2023. All Rights Reserved by Naveen.
             </div>
         </div>

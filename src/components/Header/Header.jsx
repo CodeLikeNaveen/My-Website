@@ -25,8 +25,13 @@ function Header() {
     }  
   ]
   return (
+<<<<<<< HEAD
     <header className='box-border w-[100%] top-0 z-50'>
       <nav className='md:px-4 px-2 bg-white shadow-[3px_3px_5px_rgba(0,0,0,0.1)] max-w-6xlS'>
+=======
+    <header className='top-0 z-50'>
+      <nav className='w-[100dvw] px-4 bg-white shadow-[3px_3px_5px_rgba(0,0,0,0.1)]'>
+>>>>>>> f196cdfe28763fdf42a05350dfd5bed5d3f28deb
         <label>          
           {/* Slide Portion */}
           <div className={`absolute top-0 right-0 z-50 h-[100dvh] w-60 max-sm:w-[100%] ${isChecked ? '' : ' hidden'} `} >
