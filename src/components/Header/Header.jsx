@@ -10,6 +10,10 @@ function Header() {
       setIsChecked(event.target.checked);
     };
 
+    function toggleCheckbox() {
+      setIsChecked(false);
+    }
+
     const navItems = [
     {
       name: 'About',
@@ -40,7 +44,7 @@ function Header() {
                   {navItems.map((item) =>(
                     <li key={item.name}
                         className='w-[100%] text-blue-500 font-semibold py-[0.5rem] px-[1rem] border-t-2 border-white block capitalize transform ease-out duration-200 hover:text-gray-700'
-                      ><button onClick={() => navigate(item.slug)} className='w-[100%] text-left'> {item.name} </button>
+                      ><button onClick={() => {toggleCheckbox(); navigate(item.slug)}} className='w-[100%] text-left'> {item.name} </button>
                     </li>))}
               <li className='w-[100%]'>
                 <a href="/Naveen_Resume.pdf"
