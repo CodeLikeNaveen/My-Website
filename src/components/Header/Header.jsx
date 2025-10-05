@@ -66,7 +66,7 @@ function Header() {
         </label>
         <ul className='w-[100%] flex justify-end items-center'>
           <li className='bg-gradient-to-l hover:bg-gradient-to-r from-blue-500 to-blue-900 font-bold text-[2rem] mr-auto bg-clip-text text-transparent'>
-            <Link to='/'>{`</>`}CodeLikee</Link>
+            <Link to='/' className='flex'>{`</>`}<h1>CodeLikeNaveen</h1></Link>
           </li>
             {navItems.map((item) => (
                 <li key={item.name}
