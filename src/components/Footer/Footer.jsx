@@ -10,16 +10,16 @@ function Footer() {
         {
             name:'LinkedIn',
             icon:'bx bxl-linkedin',
-            link:'https://www.linkedin.com/in/codelikee/'
+            link:'https://www.linkedin.com/in/codelikenaveen/'
         },
         {
             name:'Instagram',
             icon:'bx bxl-instagram',
-            link:'https://www.instagram.com/naveen.coder/'
+            link:'https://www.instagram.com/naveen.reddu/'
         }
     ]
   return (
-    <section>
+    <footer>
         <div className="md:fixed md:bottom-0 flex flex-row max-md:flex-col w-full p-2 bg-blue-500 justify-start max-md:justify-center max-md:items-center">
             <div className='flex justify-end items-center'>
                 {contactLink.map((data) => (
@@ -43,11 +43,11 @@ function Footer() {
                     `}></i></a>  
                 ))}
             </div>
-            <div className="h-[100%] text-white text-[clamp(1rem,calc(1vw+1rem),1.8rem)] md:ml-auto md:mr-8">
+            <div className="h-[100%] text-white text-[clamp(0.8rem,calc(1vw+0.8rem),1.5rem)] md:ml-auto md:mr-8">
                 &copy; Copyright 2023. All Rights Reserved by Naveen.
             </div>
         </div>
-    </section>
+    </footer>
   )
 }
 
