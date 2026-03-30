@@ -4,10 +4,10 @@ import { ProjectCard } from '../components'
 function Project() {
   const projectList = [
     {
-      title:'Game Universe',
-      language:'C++',
-      description:"Combining four 2D games in one application using C++ and SFML is an impressive feat, especially with features like high-score tracking, smooth event handling, and graphics design.",
-      link:'https://www.linkedin.com/posts/codelikee_c-sfml-coding-activity-7315948569943805954-mAI6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEaWy7UBWC6j2FjtXcPYrhzItN5J4K5eg_0'
+      title:'Code LLM',
+      language:'Python',
+      description:"successfully trained an LLM on Google Collab and fine-tuned it using pre-trained weights! This project was a deep dive into the world of generative AI, focusing on how large language models actually work.",
+      link:'https://www.linkedin.com/posts/codelikenaveen_machinelearning-llm-artificialintelligence-activity-7436004835210031106-mmcC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEaWy7UBWC6j2FjtXcPYrhzItN5J4K5eg_0'
     },
     {
       title:'Desktop Applications',

@@ -2,7 +2,7 @@ import React from 'react'
 import myImage from '../assets/Photo.jpg'
 
 function Home() {
-    const languages = ['Python', 'C++', 'C', 'HTML', 'CSS', 'JavaScript']
+    const languages = ['Python', 'Java', 'SQL', 'C++']
     
     return (
         <div className='m-[2rem] md:flex md:grid-cols-2 gap-12 justify-center '>
@@ -20,9 +20,8 @@ function Home() {
                     bg-gradient-to-l hover:bg-gradient-to-r text-center from-blue-500 to-black 
                     bg-clip-text text-transparent'>Naveen Reddu</h1>
                 <div className='flex justify-center'>
-                    <p className='text-xl text-left text-gray-500 md:text-2xl w-96 my-10'>
-                        Computer Science student specializing in AI & Data Science  with strong programming skills
-                        and a passion for technology and sports excellence.
+                    <p className='text-xl text-left text-gray-500 md:text-2xl w-[40rem] my-10'>
+                        I am pursuing my Bachelor’s degree at GJUS&T, Hisar, with a strong interest in data analysis, software development, and machine learning. I enjoy solving real-world problems using data and building practical, efficient solutions.
                     </p>
                 </div>
 
